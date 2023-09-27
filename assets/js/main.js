@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.panel').forEach((panel, i) =>{
     ScrollTrigger.create({
         trigger: panel,
-        start: "top top",
+        start: "bottom bottom",
         pin: true,
         pinSpacing: false,
     })

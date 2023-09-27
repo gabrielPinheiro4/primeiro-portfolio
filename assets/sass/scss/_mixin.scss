@@ -5,3 +5,10 @@
     text-transform: uppercase;
     color: $c2;
 }
+
+@mixin titles {
+    font-weight: 400;
+    letter-spacing: 3.6px;
+    width: 300px;
+    font-size: 7em;
+}
