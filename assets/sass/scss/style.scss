@@ -60,10 +60,11 @@ a{
     }
 }
 
-
+.panel-2{
+    background: $c2;
+}
 .about{
     padding: 200px;
-    background: $c2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -83,5 +84,30 @@ a{
     .about-link{
         grid-area: about-link;
         margin-top: 80px;
+    }
+}
+
+.text-animation{
+    margin-top: 10em;
+    overflow-x: hidden;
+    position: relative;
+    h1{
+        @include text-anima;
+        position: relative;
+    }
+    .front{
+        left: -200px;
+    }
+    .design{
+        right: -200px;
+    }
+}
+
+.projects{
+    padding: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .projects-title{
+        @include titles;
     }
 }

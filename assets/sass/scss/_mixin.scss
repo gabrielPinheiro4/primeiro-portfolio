@@ -12,3 +12,11 @@
     width: 300px;
     font-size: 7em;
 }
+
+@mixin text-anima {
+    font-size: 10em;
+    color: $c1;
+    font-weight: 300;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}

@@ -1,3 +1,4 @@
+/////////////////// SCROLL ANIMATION //////////////////////
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray('.panel').forEach((panel, i) =>{
@@ -9,7 +10,26 @@ gsap.utils.toArray('.panel').forEach((panel, i) =>{
     })
 })
 
+///////////////////// TEXT ANIMATION ///////////////////////
+gsap.to('.front', {
+  scrollTrigger: {
+    trigger: '.front',
+    scrub: 1,
+  },
+  x: 500,
+})
 
+gsap.to('.design', {
+  scrollTrigger: {
+    trigger: '.design',
+    scrub: 1,
+  },
+  x: -500,
+})
+
+
+
+///////////////////// LENIS SCROLL ///////////////////////
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
