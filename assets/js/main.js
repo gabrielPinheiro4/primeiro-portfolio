@@ -1,31 +1,43 @@
-/////////////////// SCROLL ANIMATION //////////////////////
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('.panel').forEach((panel, i) =>{
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "bottom bottom",
-        pin: true,
-        pinSpacing: false,
-    })
+const splitTypes = document.querySelectorAll('.reveal-type');
+
+splitTypes.forEach((char, i) => {
+
+  const text = new SplitType(char, {types: 'chars'})
+
+  gsap.from(text.chars, {
+    scrollTrigger: {
+      trigger: char,
+      start: 'top 80%',
+      end: 'top 20%',
+      scrub: 1,
+    },
+    opacity: 0.2,
+    stagger: 0.1,
+  },
+
+  )
+
 })
 
-///////////////////// TEXT ANIMATION ///////////////////////
-gsap.to('.front', {
-  scrollTrigger: {
-    trigger: '.front',
-    scrub: 1,
-  },
-  x: 500,
-})
 
-gsap.to('.design', {
-  scrollTrigger: {
-    trigger: '.design',
-    scrub: 1,
-  },
-  x: -500,
-})
+
+
+/////////////////// SCROLL ANIMATION //////////////////////
+
+
+// gsap.utils.toArray('.panel').forEach((panel, i) =>{
+//     ScrollTrigger.create({
+//         trigger: panel,
+//         start: "bottom bottom",
+//         pin: true,
+//         pinSpacing: false,
+//     })
+// })
+
+
+
 
 
 
