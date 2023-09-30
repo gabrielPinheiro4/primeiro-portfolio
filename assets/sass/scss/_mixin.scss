@@ -5,13 +5,17 @@
 
 }
 
-@mixin stroke {
-    color: transparent;
-    -webkit-text-stroke: 1px $L1;
-}
-
 @mixin background {
     background: url(../../imgs/nnnoise.svg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@mixin aboutLink {
+    font-size: 4em;
+    color: $c1;
+    margin-top: 200px;
+    padding: 50px;
+    border: 1px solid $L1;
+    border-radius: 50%;
 }

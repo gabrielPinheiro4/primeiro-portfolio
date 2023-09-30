@@ -1,7 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const splitTypes = document.querySelectorAll('.reveal-type');
 
+
+/////////////////// ABOUT TEXT ANIMATION //////////////////////
+const splitTypes = document.querySelectorAll('.reveal-type');
 splitTypes.forEach((char, i) => {
 
   const text = new SplitType(char, {types: 'chars'})

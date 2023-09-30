@@ -43,11 +43,20 @@ a{
 .about{
     margin-top: 400px;
     padding: 90px;
+    display: grid;
     p{
         font-size: 5em;
         color: $L1;
         text-transform: uppercase;
         word-wrap: break-word;
     }
+    .contact-button{
+        display: flex;
+        justify-content: end;
+        .link{
+            @include aboutLink;
+        }
+    }
+    
     
 }

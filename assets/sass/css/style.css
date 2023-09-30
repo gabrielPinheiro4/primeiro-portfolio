@@ -55,10 +55,28 @@ a {
 .about {
   margin-top: 400px;
   padding: 90px;
+  display: -ms-grid;
+  display: grid;
 }
 .about p {
   font-size: 5em;
   color: #FF4D00;
   text-transform: uppercase;
   word-wrap: break-word;
+}
+.about .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.about .contact-button .link {
+  font-size: 4em;
+  color: #E6E6E6;
+  margin-top: 200px;
+  padding: 50px;
+  border: 1px solid #FF4D00;
+  border-radius: 50%;
 }
