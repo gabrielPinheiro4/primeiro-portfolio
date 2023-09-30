@@ -5,15 +5,16 @@
   margin: 0;
   padding: 0;
   font-family: "Darker Grotesque", sans-serif;
-  background: #0F0F0F;
+}
+
+body {
+  background: url(../../imgs/nnnoise.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
-}
-
-.panel-1 {
-  background: #0F0F0F;
 }
 
 .home {

@@ -9,3 +9,9 @@
     color: transparent;
     -webkit-text-stroke: 1px $L1;
 }
+
+@mixin background {
+    background: url(../../imgs/nnnoise.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
