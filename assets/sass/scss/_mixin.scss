@@ -19,3 +19,10 @@
     border: 1px solid $L1;
     border-radius: 50%;
 }
+
+@mixin animaText {
+    color: $c14;
+    font-weight: 700;
+    font-size: 10em;
+    text-transform: uppercase;
+}

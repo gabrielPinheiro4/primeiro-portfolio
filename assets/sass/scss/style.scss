@@ -57,6 +57,12 @@ a{
             @include aboutLink;
         }
     }
-    
-    
+}
+
+.animated-text{
+    display: flex;
+    flex-wrap: nowrap;
+    p{
+        @include animaText;
+    }
 }
