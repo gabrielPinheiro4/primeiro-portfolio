@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "colors";
 @import "mixin";
-
+@font-face {
+    font-family: 'Power Grotesk';
+    src: url(../../font/PowerGrotesk-Regular.ttf);
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Power grotesk', sans-serif;
 }
 
 body{
@@ -24,20 +26,28 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     .home-title{
-        @include tittleStyle;   
+        @include tittleStyle;
+        h1{
+            @include titleHome;
+            
+        }   
     }
     .icons{
         margin: 30px 0 0 0;
         display: flex;
         justify-content: center;
-        gap: 90px;
+        gap: 150px;
     }
 }
 
 .home-desc{
     text-align: center;
-    font-size: 2em;
-    margin-top: 100px;
+    margin-top: 160px;
+    p{
+        color: $L1;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
 }
 
 .about{
@@ -45,7 +55,7 @@ a{
     padding: 90px;
     display: grid;
     p{
-        font-size: 5em;
+        font-size: 4.5em;
         color: $L1;
         text-transform: uppercase;
         word-wrap: break-word;
