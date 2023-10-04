@@ -24,8 +24,8 @@ a{
 
 
 .home{
-    padding: 150px 0 0 0;
     display: grid;
+    padding-top: 140px;
     grid-template-columns: 1fr;
     .home-title{
         @include tittleStyle;
@@ -54,6 +54,7 @@ a{
 
 .about{
     margin-top: 400px;
+    overflow: hidden;
     padding: 90px;
     display: grid;
     p{
@@ -84,7 +85,7 @@ a{
 
 .projects{
     margin: 400px 0 0 0;
-    padding-bottom: 40px;
+    padding-bottom: 200px;
     h1{
         color: $L1;
         text-align: center;
@@ -114,11 +115,41 @@ a{
     .contact{
         display: flex;
         flex-direction: column;
-        padding: 100px;
+        padding: 80px;
         a{
             font-size: 8em;
             color: $c1;
             text-transform: uppercase;
+        }
+        .contact-link-1{
+            &::before{
+                content: url(../../imgs/icon-2.svg);
+                margin-right: 20px;
+              
+            }
+        }
+        .contact-link-2{
+            &::before{
+                content: url(../../imgs/icon-4.svg);
+                margin-right: 20px;
+              
+            }
+        }
+
+        .contact-link-3{
+            &::before{
+                content: url(../../imgs/icon-5.svg);
+                margin-right: 20px;
+              
+            }
+        }
+
+        .contact-link-4{
+            &::before{
+                content: url(../../imgs/icon-6.svg);
+                margin-right: 20px;
+              
+            }
         }
     }
 }

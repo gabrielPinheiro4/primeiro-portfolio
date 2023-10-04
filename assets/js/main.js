@@ -62,7 +62,6 @@ gsap.utils.toArray('.panel').forEach((panel, i) =>{
         start: "bottom bottom",
         pin: true,
         pinSpacing: false,
-        duration: 0.3,
     })
 })
 
