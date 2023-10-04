@@ -22,7 +22,7 @@ splitTypes.forEach((char, i) => {
 
 })
 
-
+/////////////////////////LINK MAGNECTICO /////////////////////////
 let link = document.querySelectorAll('.link-mag').forEach(link => {
   link.addEventListener('mousemove', (e => {
     let x = e.offsetX;
@@ -39,6 +39,17 @@ let link = document.querySelectorAll('.link-mag').forEach(link => {
       link.style.transform = '';
     })
 })
+
+
+
+gsap.to('.anima', {
+  scrollTrigger: {
+    trigger: '.anima',
+    scrub: 1,
+  },
+  x: -1000,
+})
+
 
 
 

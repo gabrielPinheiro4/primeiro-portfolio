@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Power grotesk', sans-serif;
+    
 }
 
 body{
@@ -73,9 +74,13 @@ a{
 }
 
 .animated-text{
-    display: flex;
-    flex-wrap: nowrap;
+    margin-top: 300px;
+    overflow: hidden;
     p{
         @include animaText;
     }
+    // span + span::before{
+    //     content: url(../../imgs/anima.svg);
+    //     position: relative;
+    // }
 }
