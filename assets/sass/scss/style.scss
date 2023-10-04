@@ -79,8 +79,30 @@ a{
     p{
         @include animaText;
     }
-    // span + span::before{
-    //     content: url(../../imgs/anima.svg);
-    //     position: relative;
-    // }
+}
+
+.projects{
+    margin-top: 400px;
+    h1{
+        color: $L1;
+        text-align: center;
+        font-size: 10em;
+        text-transform: uppercase;
+    }
+    .links-projects{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        .project{
+            text-align: center;
+            position: relative;
+            top: -40px;
+            img{
+                border-radius: 5px;
+            }
+        }
+    }
+    
 }
