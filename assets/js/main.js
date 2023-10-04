@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-
 /////////////////// ABOUT TEXT ANIMATION //////////////////////
 const splitTypes = document.querySelectorAll('.reveal-type');
 splitTypes.forEach((char, i) => {
@@ -23,6 +22,23 @@ splitTypes.forEach((char, i) => {
 
 })
 
+
+let link = document.querySelectorAll('.link-mag').forEach(link => {
+  link.addEventListener('mousemove', (e => {
+    let x = e.offsetX;
+    let y = e.offsetY;
+    let linkWidth = link.clientWidth;
+    let linkHeight = link.clientHeight;
+    let transX = (x - linkWidth /2);
+    let transY = (y - linkHeight/2);
+    link.style.transform = `translateX(${transX}px) translateY(${transY}px)`;
+
+
+  }))
+    link.addEventListener('mouseout', (e) => {
+      link.style.transform = '';
+    })
+})
 
 
 

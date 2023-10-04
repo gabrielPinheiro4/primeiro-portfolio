@@ -65,6 +65,9 @@ a{
         justify-content: end;
         .link{
             @include aboutLink;
+            &:hover{
+                background-color: $L1;
+            }
         }
     }
 }
