@@ -22,8 +22,9 @@ a{
 }
 
 
+
 .home{
-    margin: 150px 0 0 0;
+    padding: 150px 0 0 0;
     display: grid;
     grid-template-columns: 1fr;
     .home-title{
@@ -82,7 +83,8 @@ a{
 }
 
 .projects{
-    margin-top: 400px;
+    margin: 400px 0 0 0;
+    padding-bottom: 40px;
     h1{
         color: $L1;
         text-align: center;
@@ -105,4 +107,18 @@ a{
         }
     }
     
+}
+
+.panel-2{
+    background: $black;
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        a{
+            font-size: 8em;
+            color: $c1;
+            text-transform: uppercase;
+        }
+    }
 }

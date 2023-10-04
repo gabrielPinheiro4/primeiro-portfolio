@@ -41,7 +41,7 @@ let link = document.querySelectorAll('.link-mag').forEach(link => {
 })
 
 
-
+/////////////// TEXT ANIMATION////////////////////////////
 gsap.to('.anima', {
   scrollTrigger: {
     trigger: '.anima',
@@ -56,14 +56,15 @@ gsap.to('.anima', {
 /////////////////// SCROLL ANIMATION //////////////////////
 
 
-// gsap.utils.toArray('.panel').forEach((panel, i) =>{
-//     ScrollTrigger.create({
-//         trigger: panel,
-//         start: "bottom bottom",
-//         pin: true,
-//         pinSpacing: false,
-//     })
-// })
+gsap.utils.toArray('.panel').forEach((panel, i) =>{
+    ScrollTrigger.create({
+        trigger: panel,
+        start: "bottom bottom",
+        pin: true,
+        pinSpacing: false,
+        duration: 0.3,
+    })
+})
 
 
 
