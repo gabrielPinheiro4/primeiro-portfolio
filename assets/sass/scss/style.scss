@@ -120,6 +120,10 @@ a{
             font-size: 8em;
             color: $c1;
             text-transform: uppercase;
+            transition: .3s;
+            &:hover{
+                color: $L1;
+            }
         }
         .contact-link-1{
             &::before{
