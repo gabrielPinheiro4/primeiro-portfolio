@@ -22,6 +22,31 @@ splitTypes.forEach((char, i) => {
 
 })
 
+
+/////////////////// ABOUT TEXT ANIMATION //////////////////////
+const desc = document.querySelectorAll('.desc');
+desc.forEach((char, i) => {
+
+  const text = new SplitType(char, {types: 'chars'})
+
+  gsap.from(text.chars, {
+    scrollTrigger: {
+      trigger: char,
+      start: 'center 80%',
+      end: 'top 20%',
+      scrub: true,
+    },
+    scaleY: 0,
+    y:-20,
+    transformOrigin: 'top',
+    stagger: 0.1,
+  },
+
+  )
+
+})
+
+
 /////////////////////////LINK MAGNECTICO /////////////////////////
 let link = document.querySelectorAll('.link-mag').forEach(link => {
   link.addEventListener('mousemove', (e => {

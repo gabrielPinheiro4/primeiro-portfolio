@@ -1,0 +1,40 @@
+@media (max-width: 1230px) {
+    .home-title h1 span{
+        font-size: .8em;
+        line-height: 150px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .home-title h1 span{
+        font-size: .5em;
+        line-height: 100px;
+    }
+}
+
+
+
+@media (max-width: 1170px){
+    .project a img{
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px){
+    .project a img{
+        width: 700px;
+    }
+    .projects .projects-title{
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 765px){
+    .project a img{
+        width: 500px;
+    }
+
+    .projects .projects-title{
+        font-size: 7em;
+    }
+}

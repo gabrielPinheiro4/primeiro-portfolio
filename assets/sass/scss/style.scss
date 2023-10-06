@@ -1,5 +1,8 @@
 @import "colors";
 @import "mixin";
+@import "querys";
+
+
 @font-face {
     font-family: 'Power Grotesk';
     src: url(../../font/PowerGrotesk-Regular.ttf);
@@ -15,20 +18,31 @@
 
 body{
     @include background;
+    overflow-x: hidden;
+}
+
+::selection{
+    color: $black;
+    background: $L1;
 }
 
 a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 
 
 .home{
-    display: grid;
+    display: flex;
     padding-top: 140px;
-    grid-template-columns: 1fr;
+   flex-direction: column;
     .home-title{
-        @include tittleStyle;
+        display: flex;
+        justify-content: center;
         h1{
             @include titleHome;
             
@@ -37,8 +51,8 @@ a{
     .icons{
         margin: 30px 0 0 0;
         display: flex;
-        justify-content: center;
-        gap: 150px;
+        justify-content: space-around;
+       
     }
 }
 
@@ -56,12 +70,10 @@ a{
     margin-top: 400px;
     overflow: hidden;
     padding: 90px;
-    display: grid;
     p{
         font-size: 4.5em;
         color: $L1;
         text-transform: uppercase;
-        word-wrap: break-word;
     }
     .contact-button{
         display: flex;
@@ -157,3 +169,5 @@ a{
         }
     }
 }
+
+
