@@ -23,7 +23,7 @@ splitTypes.forEach((char, i) => {
 })
 
 
-/////////////////// ABOUT TEXT ANIMATION //////////////////////
+/////////////////// DESC TEXT ANIMATION //////////////////////
 const desc = document.querySelectorAll('.desc');
 desc.forEach((char, i) => {
 
@@ -75,6 +75,17 @@ gsap.to('.anima', {
   x: -1000,
 })
 
+//////////////////////// SKILLS ANIMATION //////////////////////
+let skills = document.querySelectorAll('.skill-reveal').forEach((item, i) =>{
+  gsap.from(item, {
+    scrollTrigger: {
+      trigger: item,
+      start: 'top 90%',
+      scrub: 1,
+    },
+    x: 300,
+  })
+})
 
 
 
