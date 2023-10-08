@@ -3,15 +3,11 @@
         font-size: .8em;
         line-height: 150px;
     }
-}
 
-@media (max-width: 1030px) {
-    .home-title h1 span{
-        font-size: .5em;
-        line-height: 100px;
+    .home-desc .desc{
+        font-size: 2.3em;
     }
 }
-
 
 
 @media (max-width: 1170px){
@@ -20,21 +16,68 @@
     }
 }
 
+
+@media (max-width: 1030px) {
+    .home-title h1 span{
+        font-size: .5em;
+        line-height: 100px;
+    }
+
+    .about .about-text{
+        font-size: 3em;
+    }
+}
+
+
 @media (max-width: 1000px){
     .project a img{
         width: 700px;
     }
+
+    .home-desc .desc{
+        font-size: 1.9em;
+    }
+
+    .contact-button{
+        font-size: .7em;
+    }
+
     .projects .projects-title{
         font-size: 8em;
     }
 }
 
+
+
+
 @media (max-width: 765px){
+    .home-desc .desc{
+        font-size: 1.5em;
+    }
+
     .project a img{
         width: 500px;
+    }
+    
+    .about .about-text{
+        font-size: 2.3em;
     }
 
     .projects .projects-title{
         font-size: 7em;
+    }
+}
+
+
+
+
+@media (max-width: 672px){
+    .home-title h1 span{
+        font-size: .4em;
+        line-height: 80px;
+    }
+
+    .projects .projects-title{
+        font-size: 6em;
     }
 }
