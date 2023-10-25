@@ -1,0 +1,169 @@
+@media(max-width: 1438px){
+    .content{
+        .home{
+            .home-img{
+                max-width: 400px;
+            }
+           
+        }
+    }
+}
+
+@media(max-width: 1308px){
+    .content{
+        .home{
+            .home-img{
+                max-width: 300px;
+            }
+
+            .home-title{
+                span{
+                    font-size: 1.2em;
+                }
+                h1{
+                    font-size: 3em;
+                }
+            }
+           
+        }
+    }
+}
+
+@media(max-width: 1208px){
+    .content{
+        .home{
+            .home-img{
+                max-width: 290px;
+            }
+
+            .home-title{
+                h1{
+                    font-size: 2.5em;
+                    max-width: 400px;
+                }
+            }
+           
+        }
+    }
+}
+
+
+@media(max-width: 1021px){
+    .content{
+        .home{
+            justify-content: start;
+
+            .home-title{
+                h1{
+                    font-size: 2.5em;
+                    
+                }
+            }
+           
+        }
+    }
+}
+
+@media(max-width: 960px){
+    .content{
+        .home{
+            .home-title{
+                span{
+                    font-size: 1.5em;
+                }
+                h1{
+                    font-size: 4em;
+                    max-width: 100%;
+                }
+            }
+           
+        }
+    }
+}
+
+@media(max-width: 760px){
+    .content{
+        .home{
+            .home-title{
+                span{
+                    font-size: 1em;
+                }
+                h1{
+                    font-size: 3em;
+                }
+            }
+           
+        }
+
+        .sobre{
+            p{
+                font-size: 1.5em;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 641px){    
+    .content{
+        .home{
+            padding: 0 30px;
+            .home-title{
+                h1{
+                    font-size: 2em;
+                }
+            }
+           
+        }
+
+
+        .sobre{
+            padding: 0 30px;
+        }
+    
+        .projetos{
+            padding: 0 30px;
+        }
+        
+    }
+
+    
+}
+
+@media(max-width: 472px){
+    .content{
+        .home{
+            .home-img{
+                max-width: 200px;
+            }
+
+            .home-title{
+                h1{
+                    font-size: 2em;
+                }
+            }
+           
+        }
+    }
+}
+
+@media(max-width: 371px){
+    .content{
+        .home{
+            .home-img{
+                display: none;
+            }
+
+            .home-title{
+                span{
+                    font-size: .8em;
+                }
+                h1{
+                    font-size: 1.5em;
+                }
+            }
+           
+        }
+    }
+}
