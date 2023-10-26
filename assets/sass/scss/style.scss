@@ -4,20 +4,20 @@
 
 //////////////// FONTS ///////////////////
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;900&display=swap');
-
 //////////////// CONFIG ///////////////////
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+///////////////// BODY ///////////////////
 body{
     background: $background;
     font-family: 'Archivo', sans-serif;
     color: $primary;
 }
 
+///////////////// TEXTS ////////////////
 ul{
     list-style: none;
 }
@@ -26,6 +26,13 @@ a{
     text-decoration: none;
 }
 
+@mixin h2title{
+        font-size: 1.5em;
+        color: $secondary;
+        text-transform: uppercase;
+        font-weight: 400;
+}
+//////////////////// SLIDE TEXT ///////////////////////
 @keyframes slide-text {
     0%{
         transform: translateX(0);
@@ -79,10 +86,7 @@ a{
     padding: 0 90px;
     margin-top: 256px;
     h2{
-        font-size: 1.5em;
-        color: $secondary;
-        text-transform: uppercase;
-        font-weight: 400;
+        @include h2title;
     }
     p{
         font-size: 2.25em;
@@ -123,6 +127,10 @@ a{
                 width: 1200px;
                 img{
                     max-width: 100%;
+                    transition: .3s;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
                 }
             }
 
@@ -148,7 +156,33 @@ a{
             }
         }
     }
-   
-   
 }
 
+
+
+////////////////// HABILIDADES //////////////////
+.habilidades{
+    padding: 0 90px;
+    margin-top: 256px;
+    h2{
+        @include h2title;
+    }
+
+    .hab{
+        margin-top: 32px;
+        .designer{
+            margin-top: 24px;
+        }
+    }
+        .title-hab{
+            font-size: 2.25em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .desc-hab{
+            font-size: 1.5em;
+            color: $secondary;
+        }
+
+}
