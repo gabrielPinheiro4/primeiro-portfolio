@@ -18,6 +18,24 @@ body{
     color: $primary;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes slide-text {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
 ////////////////// HOME ////////////////////
 .home{
     margin-top: 128px;
@@ -77,21 +95,60 @@ body{
 .projetos{
     padding: 0 90px;
     margin-top: 256px;
-    position: relative;
     overflow: hidden;
+    .slide-text{
+        min-width: 100%;
+    }
     h2{
+        display: flex;
+        gap: 32px;
         font-size: 6em;
         text-transform: uppercase;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+       
+        span{
+            animation: slide-text 10s linear infinite;
+            width: 100%;
+        }
     }
+
+    .projetos-link{
+        margin-top: 32px;
+        display: flex;
+        gap: 130px;
+        .projeto{
+            .projeto-img{
+                width: 1200px;
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            .projetos-title{
+                padding-top: 10px;
+                p{
+                    font-size: 2.25em;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .tec{
+                    padding-top: 10px;
+                    display: flex;
+                    gap: 10px;
+                    color: $secondary;
+                    text-transform: uppercase;
+                    li{
+                        border: 1px solid $secondary;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+   
    
 }
 
-@keyframes slide-text {
-    0%{
-        transform: translate(0,0);
-    }
-
-    100%{
-        transform: translate(-100%, 0);
-    }
-}
