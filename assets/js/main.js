@@ -9,6 +9,16 @@ new hoverEffect({
     displacementImage: 'assets/imgs/4.png'
 })
 
+///////////////// SOBRE TEXT ANIMATION ////////////////
+const sobre = new SplitType('.reveal-type', {types: 'char, words'});
+gsap.to(sobre.chars, {
+  scrollTrigger: {
+    trigger: '.sobre',
+    start: 'top 90%',
+  },
+  y:0,
+  stagger: 0.01,
+})
 
 
 ///////////// PROJETOS HORIZONTAL SCROLL ////////////
