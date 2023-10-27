@@ -92,7 +92,7 @@ a{
     p{
         font-size: 2.25em;
         max-width: 900px;
-        margin-top: 32px;
+        margin-top: 24px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .char{
@@ -105,21 +105,16 @@ a{
     padding: 0 90px;
     margin-top: 300px;
     overflow: hidden;
-    .slide-text{
-        min-width: 100%;
+    .slide{
+        display: flex;
     }
     h2{
         display: flex;
-        gap: 32px;
         font-size: 6em;
         text-transform: uppercase;
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-       
+        animation: slide-text 10s linear infinite;
         span{
-            animation: slide-text 10s linear infinite;
-            width: 100%;
+            margin-left: 64px;
         }
     }
 
@@ -175,7 +170,7 @@ a{
     }
 
     .hab{
-        margin-top: 32px;
+        margin-top: 24px;
         .designer{
             margin-top: 24px;
         }
