@@ -23,7 +23,7 @@ gsap.to(projetos, {
     scrub: true,
     end: () => '+=' + document.querySelector('.projetos-link').offsetWidth
   }
-})
+});
 
 
 ////////////////////// LENIS SCROLL /////////////////

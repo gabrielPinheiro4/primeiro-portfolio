@@ -15,6 +15,7 @@ body{
     background: $background;
     font-family: 'Archivo', sans-serif;
     color: $primary;
+    padding-bottom: 50px;
 }
 
 ///////////////// TEXTS ////////////////
@@ -84,7 +85,7 @@ a{
 ////////////////// SOBRE ////////////////////
 .sobre{
     padding: 0 90px;
-    margin-top: 256px;
+    margin-top: 300px;
     h2{
         @include h2title;
     }
@@ -98,7 +99,7 @@ a{
 ///////////////// PROJETOS /////////////////
 .projetos{
     padding: 0 90px;
-    margin-top: 256px;
+    margin-top: 300px;
     overflow: hidden;
     .slide-text{
         min-width: 100%;
@@ -119,7 +120,7 @@ a{
     }
 
     .projetos-link{
-        margin-top: 32px;
+        padding-top: 10px;
         display: flex;
         gap: 130px;
         .projeto{
@@ -137,13 +138,13 @@ a{
             .projetos-title{
                 padding-top: 10px;
                 p{
-                    font-size: 2.25em;
+                    font-size: 2em;
                     text-transform: uppercase;
                     font-weight: 700;
                 }
 
                 .tec{
-                    padding-top: 10px;
+                    padding-top: 5px;
                     display: flex;
                     gap: 10px;
                     color: $secondary;
@@ -151,6 +152,7 @@ a{
                     li{
                         border: 1px solid $secondary;
                         padding: 5px;
+                        font-size: .9em;
                     }
                 }
             }
@@ -163,7 +165,7 @@ a{
 ////////////////// HABILIDADES //////////////////
 .habilidades{
     padding: 0 90px;
-    margin-top: 256px;
+    margin-top: 300px;
     h2{
         @include h2title;
     }
@@ -185,4 +187,48 @@ a{
             color: $secondary;
         }
 
+}
+
+////////////// CONTATO ////////////////
+.contato{
+    margin-top: 300px;
+    padding: 0 90px;
+    h2{
+        color: $secondary;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2em;
+    }
+    .email{
+        color: $primary;
+        font-size: 3em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        font-weight: 700;
+        transition: .5s;
+        &:hover{
+            font-size: 3.1em;
+        }
+    }
+
+    .contato-links{
+        margin-top: 128px;
+        .links{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            li a{
+                font-size: 1.5em;
+                text-transform: uppercase;
+                color: $primary;
+                transition: .5s;
+                &:hover{
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
 }
