@@ -67,9 +67,15 @@ a{
         width: 100%;
     }
     .home-img{
-        max-width: 530px;
+        width: 600px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
         img{
-            width: 100%;
+            max-width: 100%;
+            max-height: 700px;
+            position: absolute;
+            mix-blend-mode: luminosity;
         }
     }
 

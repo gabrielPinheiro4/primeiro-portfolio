@@ -1,12 +1,17 @@
-//////////////////// HOME IMG //////////////////
-new hoverEffect({
-    parent: document.querySelector('.home-img'),
-    intensity: 0.5,  
-    speedIn: 2,
-    speedOut: 2,
-    image1: 'assets/imgs/home-img.jpg',
-    image2: 'assets/imgs/home-img.jpg',
-    displacementImage: 'assets/imgs/4.png'
+
+gsap.utils.toArray(".home-img .parallax-content").forEach((section, i) => {
+  const heightDiff = section.offsetHeight - section.parentElement.offsetHeight;
+  
+  gsap.fromTo(section,{ 
+    y: -heightDiff
+  }, {
+    scrollTrigger: {
+      trigger: section,
+      scrub: true
+    },
+    y: 0,
+    ease: "none"
+  });
 });
 
 
