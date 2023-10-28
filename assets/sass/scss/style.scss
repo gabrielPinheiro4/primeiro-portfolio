@@ -18,6 +18,12 @@ body{
     padding-bottom: 50px;
 }
 
+///////////////// SELECT //////////////////
+::selection{
+    background: $primary;
+    color: $background;
+}
+
 ///////////////// TEXTS ////////////////
 ul{
     list-style: none;
@@ -27,6 +33,7 @@ a{
     text-decoration: none;
 }
 
+/////////////// MIXIN ////////////////
 @mixin h2title{
         font-size: 1.5em;
         color: $secondary;
@@ -47,7 +54,7 @@ a{
 ////////////////// HOME ////////////////////
 .home{
     margin-top: 128px;
-    padding: 0 90px;
+    padding: 0 60px;
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-between;
@@ -84,7 +91,7 @@ a{
 }
 ////////////////// SOBRE ////////////////////
 .sobre{
-    padding: 0 90px;
+    padding: 0 60px;
     margin-top: 300px;
     h2{
         @include h2title;
@@ -102,7 +109,7 @@ a{
 
 ///////////////// PROJETOS /////////////////
 .projetos{
-    padding: 0 90px;
+    padding: 0 60px;
     margin-top: 300px;
     overflow: hidden;
     .slide{
@@ -119,7 +126,7 @@ a{
     }
 
     .projetos-link{
-        padding-top: 10px;
+        padding-top: 10px ;
         display: flex;
         gap: 130px;
         .projeto{
@@ -145,6 +152,7 @@ a{
                 .tec{
                     padding-top: 5px;
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 10px;
                     color: $secondary;
                     text-transform: uppercase;
@@ -163,7 +171,7 @@ a{
 
 ////////////////// HABILIDADES //////////////////
 .habilidades{
-    padding: 0 90px;
+    padding: 0 60px;
     margin-top: 300px;
     h2{
         @include h2title;
@@ -171,18 +179,18 @@ a{
 
     .hab{
         margin-top: 24px;
-        .designer{
-            margin-top: 24px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 128px;
     }
         .title-hab{
-            font-size: 2.25em;
+            font-size: 4em;
             text-transform: uppercase;
             font-weight: 700;
         }
 
         .desc-hab{
-            font-size: 1.5em;
+            font-size: 2em;
             color: $secondary;
         }
 
@@ -190,8 +198,8 @@ a{
 
 ////////////// CONTATO ////////////////
 .contato{
-    margin-top: 300px;
-    padding: 0 90px;
+    margin-top: 340px;
+    padding: 0 60px;
     h2{
         color: $secondary;
         display: flex;

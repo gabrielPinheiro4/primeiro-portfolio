@@ -7,14 +7,15 @@ new hoverEffect({
     image1: 'assets/imgs/home-img.jpg',
     image2: 'assets/imgs/home-img.jpg',
     displacementImage: 'assets/imgs/4.png'
-})
+});
+
 
 ///////////////// SOBRE TEXT ANIMATION ////////////////
 const sobre = new SplitType('.reveal-type', {types: 'char, words'});
 gsap.to(sobre.chars, {
   scrollTrigger: {
     trigger: '.sobre',
-    start: 'top 90%',
+    start: 'top 80%',
   },
   y:0,
   stagger: 0.01,
@@ -22,18 +23,22 @@ gsap.to(sobre.chars, {
 
 
 ///////////// PROJETOS HORIZONTAL SCROLL ////////////
-const projetos = document.querySelectorAll('.projeto');
+if(window.matchMedia('(min-width: 641px)').matches){
 
-gsap.to(projetos, {
-  xPercent: -100 * (projetos.length - 1),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.projetos-link',
-    pin: true,
-    scrub: true,
-    end: () => '+=' + document.querySelector('.projetos-link').offsetWidth
-  }
-});
+  const projetos = document.querySelectorAll('.projeto');
+
+  gsap.to(projetos, {
+    xPercent: -100 * (projetos.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.projetos-link',
+      pin: true,
+      scrub: true,
+      end: () => '+=' + document.querySelector('.projetos-link').offsetWidth
+    }
+  });
+
+}
 
 
 ////////////////////// LENIS SCROLL /////////////////
