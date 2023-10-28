@@ -1,4 +1,4 @@
-
+////////////////////////// PARALLAX IMAGE ////////////////////////////
 gsap.utils.toArray(".home-img .parallax-content").forEach((section, i) => {
   const heightDiff = section.offsetHeight - section.parentElement.offsetHeight;
   

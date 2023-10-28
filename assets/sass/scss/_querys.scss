@@ -68,6 +68,7 @@
         .home{
             .home-img{
                 max-width: 450px;
+                max-height: 550px;
             }
 
             .home-title{
@@ -97,11 +98,41 @@
     }
 }
 
+@media(max-width: 1185px){
+    .content{
+        .projetos{
+            .projetos-link{
+                padding-top: 32px;
+                .projeto{
+                    .projeto-img{
+                        width: 800px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1083px){
+    .content{
+        .projetos{
+            .projetos-link{
+                .projeto{
+                    .projeto-img{
+                        width: 750px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 1060px){
     .content{
         .home{
             .home-img{
                 max-width: 400px;
+                max-height: 500px;
             }
 
             .home-title{
@@ -120,7 +151,7 @@
         .home{
             .home-img{
                 max-width: 350px;
-                max-height: 450px;
+                max-height: 550px;
             }
 
             .home-title{
@@ -150,6 +181,7 @@
         .home{
             .home-img{
                 max-width: 500px;
+                max-height: 600px;
                 img{
                     height: 700px;
                 }
@@ -231,6 +263,9 @@
         }
 
         .sobre{
+            h2{
+                font-size: 1em;
+            }
             p{
                 font-size: 1.5em;
                 line-height: 28px;
@@ -315,7 +350,7 @@
         .home{
             .home-img{
                 max-width: 400px;
-                max-height: 400px;
+                max-height: 500px;
                 img{
                     height: 600px;
                 }
@@ -344,6 +379,12 @@
 
 @media(max-width: 498px){
     .content{
+        .sobre{
+            p{
+                font-size: 1.2em;
+            }
+        }
+
         .projetos{
             .projetos-link{
                 .projeto{
@@ -400,6 +441,23 @@
             }
            
         }
+
+        .contato{
+            h2{
+                font-size: 1.5em;
+            }
+            .email{
+                font-size: 1em;
+            }
+
+            .contato-links{
+                .links{
+                    li a{
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -417,11 +475,41 @@
     }
 }
 
+@media(max-width: 401px){
+    .content{
+        .sobre{
+            h2{
+                font-size: .7em;
+            }
+
+            p{
+                font-size: 1em;
+            }
+        }
+
+        .habilidades{
+            h2{
+                font-size: .7em;
+            }
+            .hab{
+                .title-hab{
+                    font-size: 1.5em;
+                }
+
+                .desc-hab{
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 371px){
     .content{
         .home{
             .home-img{
-                display: none;
+                max-width: 240px;
+                max-height: 300px;
             }
 
             .home-title{
@@ -433,6 +521,20 @@
                 }
             }
            
+        }
+
+        .contato{
+            .email{
+                font-size: .8em;
+            }
+
+            .contato-links{
+                .links{
+                    li a{
+                        font-size: .6em;
+                    }
+                }
+            }
         }
     }
 }
