@@ -1,3 +1,109 @@
+@media(min-width: 2263px){
+    .content{
+        .navbar{
+            padding: 50px 150px;
+        }
+        .home{
+            padding: 0 150px;
+        }
+
+        .sobre{
+            padding: 0 150px;
+        }
+
+        .projetos{
+            h2{
+                font-size: 8em;
+            }
+            padding: 0 150px;
+            .projetos-link{
+                padding-top: 100px;
+                .projeto{
+                    .projeto-img{
+                        width: 2000px;
+                    }
+
+                    .projetos-title{
+                        p{
+                            font-size: 4em;
+                        }
+
+                        .tec{
+                            gap: 30px;
+                            li{
+                                font-size: 1.5em;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .habilidades{
+            padding: 0 150px;
+        }
+
+        .contato{
+            padding: 0 150px;
+        }
+    }
+}
+
+@media(min-width: 2043px){
+    .content{
+        .home{
+            gap: 200px;
+            .home-title{
+                span{
+                    font-size: 3em;
+                }
+                h1{
+                    font-size: 6em;
+                    max-width: 900px;
+                }
+            }
+        }
+
+        .sobre{
+            h2{
+                font-size: 2em;
+            }
+
+            p{
+                font-size: 3em;
+                max-width: 1400px;
+            }
+        }
+
+        .projetos{
+            .projetos-link{
+                padding-top: 20px;
+                .projeto{
+                    .projeto-img{
+                        width: 1500px;
+                    }
+
+                    .projetos-title{
+                        p{
+                            font-size: 3em;
+                        }
+
+                        .tec{
+                            gap: 30px;
+                            li{
+                                font-size: 1.5em;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media(max-width: 1439px){
     .content{
         .home{
@@ -361,6 +467,11 @@
         }
 
         .projetos{
+            .slide{
+                h2{
+                    font-size: 4em;
+                }
+            }
             .projetos-link{
                 .projeto{
                     .projeto-img{
@@ -396,21 +507,7 @@
     }
 }
 
-@media(max-width: 462px){
-    .content{
-        .navbar{
-            .logo{
-                display: none;
-            }
 
-            .nav-links{
-                li a{
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
 
 @media(max-width: 498px){
     .content{
@@ -496,6 +593,22 @@
     }
 }
 
+@media(max-width: 462px){
+    .content{
+        .navbar{
+            .logo{
+                display: none;
+            }
+
+            .nav-links{
+                li a{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 434px){
     .content{
         .projetos{
@@ -567,6 +680,20 @@
                 .links{
                     li a{
                         font-size: .6em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 347px){
+    .content{
+        .projetos{
+            .projetos-link{
+                .projeto{
+                    .projeto-img{
+                        width: 260px;
                     }
                 }
             }

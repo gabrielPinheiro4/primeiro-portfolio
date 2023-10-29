@@ -1,3 +1,4 @@
+//////////////////////// NAV LINKS /////////////////////////////////
 function scrollNav(evento){
   evento.preventDefault();
 
@@ -14,9 +15,8 @@ const navLinks = document.querySelectorAll('.js-menu a[href^="#"]');
 navLinks.forEach((item, i) => {
   item.addEventListener('click', scrollNav);
 })
-
 ////////////////////////// PARALLAX IMAGE ////////////////////////////
-gsap.utils.toArray(".home-img .parallax-content").forEach((section, i) => {
+gsap.utils.toArray(".home-img .parallax-content").forEach((section) => {
   const heightDiff = section.offsetHeight - section.parentElement.offsetHeight;
   
   gsap.fromTo(section,{ 
@@ -30,8 +30,6 @@ gsap.utils.toArray(".home-img .parallax-content").forEach((section, i) => {
     ease: "none"
   });
 });
-
-
 ///////////////// SOBRE TEXT ANIMATION ////////////////
 const sobre = new SplitType('.reveal-type', {types: 'char, words'});
 gsap.to(sobre.chars, {
@@ -41,9 +39,7 @@ gsap.to(sobre.chars, {
   },
   y:0,
   stagger: 0.01,
-})
-
-
+});
 ///////////// PROJETOS HORIZONTAL SCROLL ////////////
 if(window.matchMedia('(min-width: 641px)').matches){
 
@@ -61,8 +57,6 @@ if(window.matchMedia('(min-width: 641px)').matches){
   });
 
 }
-
-
 ////////////////////// LENIS SCROLL /////////////////
 const lenis = new Lenis()
 
