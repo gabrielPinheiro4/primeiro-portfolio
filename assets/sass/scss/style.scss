@@ -51,6 +51,35 @@ a{
     }
 }
 
+.content{
+    position: relative;
+}
+/////////////////// NAVBAR/////////////////////////
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    mix-blend-mode: difference;
+    .logo{
+        color: $primary;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-family: 400;
+    }
+    .nav-links{
+        display: flex;
+        gap: 30px;
+        li a{
+            color: $primary;
+            text-transform: uppercase;
+        }
+    }
+}
 ////////////////// HOME ////////////////////
 .home{
     margin-top: 128px;
@@ -71,14 +100,11 @@ a{
         height: 600px;
         position: relative;
         overflow: hidden;
-
-        
         img{
             max-width: 100%;
             max-height: 700px;
             position: absolute;
             mix-blend-mode: luminosity;
-           
         }
     }
 
@@ -104,6 +130,7 @@ a{
     margin-top: 300px;
     h2{
         @include h2title;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     p{
         font-size: 2.25em;

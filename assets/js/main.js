@@ -1,3 +1,20 @@
+function scrollNav(evento){
+  evento.preventDefault();
+
+  const hrefNav = evento.currentTarget.getAttribute('href');
+  const section = document.querySelector(hrefNav);
+
+  section.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  })
+}
+
+const navLinks = document.querySelectorAll('.js-menu a[href^="#"]');
+navLinks.forEach((item, i) => {
+  item.addEventListener('click', scrollNav);
+})
+
 ////////////////////////// PARALLAX IMAGE ////////////////////////////
 gsap.utils.toArray(".home-img .parallax-content").forEach((section, i) => {
   const heightDiff = section.offsetHeight - section.parentElement.offsetHeight;
