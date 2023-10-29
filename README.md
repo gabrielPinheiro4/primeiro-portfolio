@@ -4,7 +4,7 @@
 ## Sobre
 Seja bem-vindo👋
 <br>
-Essa é a versão final do meu portfolio
+Essa é a versão final do meu portfolio.
 <br>
 https://gabrielpinheiro4.github.io/primeiro-portfolio/
 
