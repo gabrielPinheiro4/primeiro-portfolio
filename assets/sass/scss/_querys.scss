@@ -294,6 +294,9 @@
 
 @media(max-width: 641px){    
     .content{
+        .navbar{
+            padding: 50px 30px;
+        }
         .home{
             padding: 0 30px;
             .home-title{
@@ -371,6 +374,38 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 538px){
+    .content{
+        .navbar{
+            .logo{
+                font-size: 1em;
+            }
+
+            .nav-links{
+                li a{
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 462px){
+    .content{
+        .navbar{
+            .logo{
+                display: none;
+            }
+
+            .nav-links{
+                li a{
+                    text-align: center;
                 }
             }
         }
