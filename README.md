@@ -6,7 +6,7 @@ Seja bem-vindo👋
 <br>
 Essa é a versão final do meu portfolio.
 <br>
-[Link do Portfolio](https://gabpinheiro.com/)
+[Link do Portfolio]([https://gabpinheiro.com/](https://gabrielpinheiro4.github.io/primeiro-portfolio/))
 
 ## Ferramentas 🔨
 - Html
